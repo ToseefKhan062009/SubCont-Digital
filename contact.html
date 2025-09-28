@@ -32,21 +32,49 @@
 </section>
 
 <section class="section narrow">
-  <form class="contact-form" action="https://formsubmit.co/subcontractorsdigital@gmail.com" method="get">
-    <input type="hidden" name="_next" value="https://toseefkhan062009.github.io/Handyman_Andy/thank-you.html">
-    <label>Business Name<input type="text" name="business" optional></label>
-    <label>Your Name<input type="text" name="name" required></label>
-    <label>Email<input type="email" name="email" required></label>
-    <label>Phone<input type="tel" name="phone" required></label>
-    <label>Trade<select name="trade">
+  <form class="contact-form" action="https://formsubmit.co/subcontractorsdigital@gmail.com" method="POST">
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_next" value="thank-you.html">
+  <input type="hidden" name="_subject" value="New inquiry from SubCont Digital">
+  <input type="hidden" name="_template" value="table">
+  <!-- set to true if you want the captcha challenge -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- optional: send a copy to yourself or others (comma-separated) -->
+  <!-- <input type="hidden" name="_cc" value="subcontractorsdigital@gmail.com"> -->
+  <!-- honeypot (spam trap): keep the name exactly _honey and hide it -->
+  <input type="text" name="_honey" style="display:none">
+
+  <label>Business Name
+    <input type="text" name="Business Name" required>
+  </label>
+  <label>Your Name
+    <input type="text" name="Name" required>
+  </label>
+  <label>Email
+    <input type="email" name="Email" required>
+  </label>
+  <label>Phone
+    <input type="tel" name="Phone" required>
+  </label>
+  <label>Trade
+    <select name="Trade">
       <option>Painting</option><option>Drywall</option><option>Tile/Flooring</option>
       <option>Masonry/Concrete</option><option>Framing</option><option>Roofing</option>
       <option>HVAC/Plumbing/Electrical</option><option>General Contractor</option>
-    </select></label>
-    <label>Service Areas<textarea name="areas" rows="3" placeholder="Cities/ZIPs"></textarea></label>
-    <label>Message<textarea name="message" rows="5" placeholder="Tell us what you need"></textarea></label>
-    <button class="btn" type="submit">Request My Site</button>
-  </form>
+    </select>
+  </label>
+  <label>Service Areas
+    <textarea name="Service Areas" rows="3" placeholder="Cities/ZIPs"></textarea>
+  </label>
+  <label>Message
+    <textarea name="Message" rows="5" placeholder="Tell us what you need"></textarea>
+  </label>
+
+  <!-- optional: set the email “reply-to” to the sender -->
+  <input type="hidden" name="_replyto" value="%Email%">
+
+  <button class="btn" type="submit">Request My Site</button>
+</form>
 </section>
 
 <footer class="site-footer">
