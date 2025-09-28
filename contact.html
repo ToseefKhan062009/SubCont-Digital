@@ -32,27 +32,46 @@
 </section>
 
 <section class="section narrow">
- <form
-  action="https://formspree.io/f/manpewvr"
-  method="POST"
->
-  <!-- 👇 Add this line anywhere inside the form -->
-  <input type="hidden" name="_redirect" value="https://toseefkhan062009.github.io/SubCont-Digital/thank-you.html">
+ <form id="contact-form" class="contact-form"
+      action="https://formsubmit.co/subcontractorsdigital@gmail.com"
+      method="POST">
+  <!-- Must be absolute URL; yours looks correct -->
+  <input type="hidden" name="_next" value="https://toseefkhan062009.github.io/SubCont-Digital/thank-you.html">
+  <input type="hidden" name="_subject" value="New inquiry from SubCont Digital">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
 
-  <label>
-    Your email:
-    <input type="email" name="email" required>
+  <!-- Honeypot -->
+  <input type="text" name="_honey" style="display:none">
+
+  <label>Business Name (optional)
+    <input type="text" name="Business Name">
   </label>
-  <label>
-    Your message:
-    <textarea name="message" required></textarea>
+  <label>Your Name
+    <input type="text" name="Name" required>
+  </label>
+  <label>Email
+    <input type="email" name="Email" required>
+  </label>
+  <label>Phone
+    <input type="tel" name="Phone" required>
+  </label>
+  <label>Trade
+    <select name="Trade">
+      <option>Painting</option><option>Drywall</option><option>Tile/Flooring</option>
+      <option>Masonry/Concrete</option><option>Framing</option><option>Roofing</option>
+      <option>HVAC/Plumbing/Electrical</option><option>General Contractor</option>
+    </select>
+  </label>
+  <label>Service Areas
+    <textarea name="Service Areas" rows="3" placeholder="Cities/ZIPs"></textarea>
+  </label>
+  <label>Message
+    <textarea name="Message" rows="5" placeholder="Tell us what you need"></textarea>
   </label>
 
-  <!-- your other form fields go here -->
-
-  <button type="submit">Send</button>
+  <button class="btn" type="submit">Request My Site</button>
 </form>
-
 </section>
 
 <footer class="site-footer">
