@@ -32,49 +32,27 @@
 </section>
 
 <section class="section narrow">
-  <form class="contact-form" action="https://formsubmit.co/2gh2hg2hg@yopmail.com" method="POST">
-  <!-- FormSubmit settings -->
-  <input type="hidden" name="_next" value="https://toseefkhan062009.github.io/SubCont-Digital/thank-you.html">
-  <input type="hidden" name="_subject" value="New inquiry from SubCont Digital">
-  <input type="hidden" name="_template" value="table">
-  <!-- set to true if you want the captcha challenge -->
-  <input type="hidden" name="_captcha" value="false">
-  <!-- optional: send a copy to yourself or others (comma-separated) -->
-  <!-- <input type="hidden" name="_cc" value="subcontractorsdigital@gmail.com"> -->
-  <!-- honeypot (spam trap): keep the name exactly _honey and hide it -->
-  <input type="text" name="_honey" style="display:none">
+ <form
+  action="https://formspree.io/f/manpewvr"
+  method="POST"
+>
+  <!-- 👇 Add this line anywhere inside the form -->
+  <input type="hidden" name="_redirect" value="https://toseefkhan062009.github.io/SubCont-Digital/thank-you.html">
 
-  <label>Business Name (optional)
-    <input type="text" name="Business Name" >
+  <label>
+    Your email:
+    <input type="email" name="email" required>
   </label>
-  <label>Your Name
-    <input type="text" name="Name" required>
-  </label>
-  <label>Email
-    <input type="email" name="Email" required>
-  </label>
-  <label>Phone
-    <input type="tel" name="Phone" required>
-  </label>
-  <label>Trade
-    <select name="Trade">
-      <option value ="">Select your trade...</option>option><option>Painting</option><option>Drywall</option><option>Tile/Flooring</option>
-      <option>Masonry/Concrete</option><option>Framing</option><option>Roofing</option>
-      <option>HVAC/Plumbing/Electrical</option><option>General Contractor</option><option>Other trade not listed</option>
-    </select>
-  </label>
-  <label>Service Areas
-    <textarea name="Service Areas" rows="3" placeholder="Cities/ZIPs"></textarea>
-  </label>
-  <label>Message
-    <textarea name="Message" rows="5" placeholder="Tell us what you need"></textarea>
+  <label>
+    Your message:
+    <textarea name="message" required></textarea>
   </label>
 
-  <!-- optional: set the email “reply-to” to the sender -->
-  <input type="hidden" name="_replyto" value="">
+  <!-- your other form fields go here -->
 
-  <button class="btn" type="submit">Request My Site</button>
+  <button type="submit">Send</button>
 </form>
+
 </section>
 
 <footer class="site-footer">
